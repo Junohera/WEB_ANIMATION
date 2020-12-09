@@ -12,6 +12,24 @@
             border: 1px dashed red;
             overflow: hidden;
         }
+
+        .box1 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            right: 0px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .box2 {
+            position: absolute;
+            transition: 0.5s;
+            left: -600px;
+        }
+        #btn_img1 {top:0px;}
+        #btn_img2 {top:150px;}
+        #btn_img3 {top:300px;}
+        .box1:hover +.box2 {left: 0px;}
     </style>
 </head>
 <body>
