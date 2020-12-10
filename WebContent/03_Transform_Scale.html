@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    변형함수 (2D)
+        1. scale(X, Y) : 지정한 크기만큼 x축과 y축으로 이동
+        2. scaleX(X) : 지정한 크기만큼 x축으로 이동
+        3. scaleY(Y) : 지정한 크기만큼 y축으로 이동
+        4. scale(X, Y) : 지정한 크기만큼 x축과 y축으로 확대 축소
+        5. scaleX(X) : 지정한 크기만큼 x축으로 확대 축소
+        6. scaleY(Y) : 지정한 크기만큼 y축으로 확대 축소
+        7. rotate(각도) : 지정한 각도만큼 회전 (단위 : deg)
+        8. skew(X, Y) : 지정한 크기만큼 x축과 y축으로 왜곡
+        9. skewX(X) : 지정한 크기만큼 x축으로 왜곡
+        10. skewY(Y) : 지정한 크기만큼 y축으로 왜곡
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+            overflow: hidden;
+        }
+
+        .scalex,
+        .scaley,
+        .scalexy {
+            transition: 1s;
+        }
+
+        .scalex:hover {
+            transform: scaleX(1.2);
+        }
+        .scaley:hover {
+            transform: scaleY(1.5);
+        }
+        .scalexy:hover {
+            transform: scale(1.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="origin">
+        <div class="scalex">
+            <img src="images/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="scaley">
+            <img src="images/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="scalexy">
+            <img src="images/fruit.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
